@@ -1,0 +1,541 @@
+ /home/prog/amber18/bin/cpptraj > gen_one_traj.out << EOF     
+                                        
+ parm  ./2ohk_Sol_vdw2301_ZeroB.top [wat]                   
+ trajin ./2ohk_1_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_2_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_3_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_4_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_5_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_6_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_7_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_8_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_9_dyn.nc  1 last 1 parm [wat] 
+ trajin ./2ohk_10_dyn.nc  1 last 1 parm [wat] 
+                                        
+ autoimage                              
+ strip :WAT,Na+,Cl-  outprefix NoWat    
+ rms first out RMS_first.dat :1-387@CA 
+ trajout RMSD_FIRST_NoWat_alone.nc      
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,388 outprefix OneLig 
+ trajout lig_388.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,389                  
+ trajout lig_389.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,390                  
+ trajout lig_390.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,391                  
+ trajout lig_391.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,392                  
+ trajout lig_392.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,393                  
+ trajout lig_393.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,394                  
+ trajout lig_394.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,395                  
+ trajout lig_395.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,396                  
+ trajout lig_396.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,397                  
+ trajout lig_397.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,398                  
+ trajout lig_398.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,399                  
+ trajout lig_399.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,400                  
+ trajout lig_400.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,401                  
+ trajout lig_401.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,402                  
+ trajout lig_402.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,403                  
+ trajout lig_403.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,404                  
+ trajout lig_404.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,405                  
+ trajout lig_405.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,406                  
+ trajout lig_406.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,407                  
+ trajout lig_407.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,408                  
+ trajout lig_408.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,409                  
+ trajout lig_409.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,410                  
+ trajout lig_410.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,411                  
+ trajout lig_411.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,412                  
+ trajout lig_412.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  NoWat.2ohk_Sol_vdw2301_ZeroB.top [NoWat]           
+ trajin RMSD_FIRST_NoWat_alone.nc parm [NoWat]
+ strip !:1-387,413                  
+ trajout lig_413.nc  [NoWat]                
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_388.nc  parm [lig]      
+ strip !@C99
+ trajout lig_388_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_388.nc 200 200 1 parm [lig] 
+ trajout lig_388_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_389.nc  parm [lig]      
+ strip !@C99
+ trajout lig_389_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_389.nc 200 200 1 parm [lig] 
+ trajout lig_389_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_390.nc  parm [lig]      
+ strip !@C99
+ trajout lig_390_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_390.nc 200 200 1 parm [lig] 
+ trajout lig_390_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_391.nc  parm [lig]      
+ strip !@C99
+ trajout lig_391_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_391.nc 200 200 1 parm [lig] 
+ trajout lig_391_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_392.nc  parm [lig]      
+ strip !@C99
+ trajout lig_392_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_392.nc 200 200 1 parm [lig] 
+ trajout lig_392_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_393.nc  parm [lig]      
+ strip !@C99
+ trajout lig_393_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_393.nc 200 200 1 parm [lig] 
+ trajout lig_393_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_394.nc  parm [lig]      
+ strip !@C99
+ trajout lig_394_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_394.nc 200 200 1 parm [lig] 
+ trajout lig_394_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_395.nc  parm [lig]      
+ strip !@C99
+ trajout lig_395_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_395.nc 200 200 1 parm [lig] 
+ trajout lig_395_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_396.nc  parm [lig]      
+ strip !@C99
+ trajout lig_396_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_396.nc 200 200 1 parm [lig] 
+ trajout lig_396_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_397.nc  parm [lig]      
+ strip !@C99
+ trajout lig_397_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_397.nc 200 200 1 parm [lig] 
+ trajout lig_397_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_398.nc  parm [lig]      
+ strip !@C99
+ trajout lig_398_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_398.nc 200 200 1 parm [lig] 
+ trajout lig_398_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_399.nc  parm [lig]      
+ strip !@C99
+ trajout lig_399_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_399.nc 200 200 1 parm [lig] 
+ trajout lig_399_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_400.nc  parm [lig]      
+ strip !@C99
+ trajout lig_400_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_400.nc 200 200 1 parm [lig] 
+ trajout lig_400_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_401.nc  parm [lig]      
+ strip !@C99
+ trajout lig_401_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_401.nc 200 200 1 parm [lig] 
+ trajout lig_401_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_402.nc  parm [lig]      
+ strip !@C99
+ trajout lig_402_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_402.nc 200 200 1 parm [lig] 
+ trajout lig_402_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_403.nc  parm [lig]      
+ strip !@C99
+ trajout lig_403_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_403.nc 200 200 1 parm [lig] 
+ trajout lig_403_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_404.nc  parm [lig]      
+ strip !@C99
+ trajout lig_404_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_404.nc 200 200 1 parm [lig] 
+ trajout lig_404_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_405.nc  parm [lig]      
+ strip !@C99
+ trajout lig_405_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_405.nc 200 200 1 parm [lig] 
+ trajout lig_405_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_406.nc  parm [lig]      
+ strip !@C99
+ trajout lig_406_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_406.nc 200 200 1 parm [lig] 
+ trajout lig_406_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_407.nc  parm [lig]      
+ strip !@C99
+ trajout lig_407_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_407.nc 200 200 1 parm [lig] 
+ trajout lig_407_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_408.nc  parm [lig]      
+ strip !@C99
+ trajout lig_408_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_408.nc 200 200 1 parm [lig] 
+ trajout lig_408_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_409.nc  parm [lig]      
+ strip !@C99
+ trajout lig_409_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_409.nc 200 200 1 parm [lig] 
+ trajout lig_409_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_410.nc  parm [lig]      
+ strip !@C99
+ trajout lig_410_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_410.nc 200 200 1 parm [lig] 
+ trajout lig_410_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_411.nc  parm [lig]      
+ strip !@C99
+ trajout lig_411_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_411.nc 200 200 1 parm [lig] 
+ trajout lig_411_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_412.nc  parm [lig]      
+ strip !@C99
+ trajout lig_412_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_412.nc 200 200 1 parm [lig] 
+ trajout lig_412_LAST.pdb pdb
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_413.nc  parm [lig]      
+ strip !@C99
+ trajout lig_413_c99.pdb  pdb  
+ run                                    
+                                        
+ clear all                              
+ parm  OneLig.NoWat.2ohk_Sol_vdw2301_ZeroB.top [lig]      
+ trajin  lig_413.nc 200 200 1 parm [lig] 
+ trajout lig_413_LAST.pdb pdb
+ run                                    
+                                        
+EOF
