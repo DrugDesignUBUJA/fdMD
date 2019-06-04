@@ -1,0 +1,306 @@
+... ... ... ... ... ... ... 
+...  fdMD_ReactiveTraj  ... 
+...     ( 2019 )        ... 
+... ... ... ... ... ... ... 
+ 
+ Atom name to analyse            :  C99
+ Use pocket to define distances  :  False
+ Use XRay structure as reference :  False
+ Reference Protein structure     :  first_lig.pdb
+ Minimum distance Ligand-Prot    :  5.0
+ Num Plots to be done            :  2
+ Dis Plots  [x,y,..]             :  5,25
+ Snaps by nanosecond             :  1
+ Num ns to analyse               :  20
+ PerCent out of the limits       :  10
+ Prefix added to pdb files       :  _c99
+  
+ Initial Dir =  /scr/jaime/jordi/2ohk/dyn_2/traj_300_JRM
+  
+... There are =  5997  PROTEIN Atoms 
+... There are =  19  LIGAND  Atoms 
+... With Residue name =  1SQ
+... And  C99  at position  10
+                     
+... Pocessing File  : lig_406_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... SEL  REF  -13.397 68.221 82.873 
+    ... D_max ( C99_last --> C99_dyn  )    = 138.5414 
+    ... D_min ( C99_last --> Protein )    = 48.0595 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_406_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_406*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (80.016 ),sd( 28.408 ) y_max( 114.413 )
+                     
+... Pocessing File  : lig_400_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 123.5376 
+    ... D_min ( C99_last --> Protein )    = 37.0040 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_400_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_400*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (67.668 ),sd( 20.186 ) y_max( 95.418 )
+                     
+... Pocessing File  : lig_405_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 100.2583 
+    ... D_min ( C99_last --> Protein )    = 3.3400 
+    ... Number of PROTEIN atoms near REF =     21  
+    ... There are  0  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  0  in a total of  20
+    --> File : lig_405_c99.pdb  Is a REACTIVE trajectory withing  5.0  A 
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (1.604 ),sd( 0.893 ) y_max( 4.116 )
+                     
+... Pocessing File  : lig_399_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 101.9421 
+    ... D_min ( C99_last --> Protein )    = 21.4509 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_399_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_399*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (40.047 ),sd( 23.497 ) y_max( 86.297 )
+                     
+... Pocessing File  : lig_409_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 111.4453 
+    ... D_min ( C99_last --> Protein )    = 8.9572 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_409_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_409*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (40.670 ),sd( 21.208 ) y_max( 73.313 )
+                     
+... Pocessing File  : lig_395_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 117.6715 
+    ... D_min ( C99_last --> Protein )    = 28.3658 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_395_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_395*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (64.798 ),sd( 29.855 ) y_max( 117.671 )
+                     
+... Pocessing File  : lig_393_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 87.3060 
+    ... D_min ( C99_last --> Protein )    = 3.5004 
+    ... Number of PROTEIN atoms near REF =     11  
+    ... There are  1  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  3  in a total of  20
+    --> File : lig_393_c99.pdb  Is a NON-REACTIVE reactive trajectory with  15.0  % OUT
+       --> Files To Delete : lig_393*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (3.538 ),sd( 1.547 ) y_max( 6.788 )
+                     
+... Pocessing File  : lig_412_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 119.4992 
+    ... D_min ( C99_last --> Protein )    = 23.3820 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_412_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_412*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (52.695 ),sd( 22.118 ) y_max( 90.880 )
+                     
+... Pocessing File  : lig_389_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 99.9314 
+    ... D_min ( C99_last --> Protein )    = 3.9034 
+    ... Number of PROTEIN atoms near REF =      3  
+    ... There are  8  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  19  in a total of  20
+    --> File : lig_389_c99.pdb  Is a NON-REACTIVE reactive trajectory with  95.0  % OUT
+       --> Files To Delete : lig_389*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (36.410 ),sd( 14.249 ) y_max( 60.281 )
+                     
+... Pocessing File  : lig_401_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 89.3901 
+    ... D_min ( C99_last --> Protein )    = 1.3242 
+    ... Number of PROTEIN atoms near REF =     22  
+    ... There are  14  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  16  in a total of  20
+    --> File : lig_401_c99.pdb  Is a NON-REACTIVE reactive trajectory with  80.0  % OUT
+       --> Files To Delete : lig_401*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (32.481 ),sd( 19.032 ) y_max( 71.908 )
+                     
+... Pocessing File  : lig_397_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 92.5399 
+    ... D_min ( C99_last --> Protein )    = 2.7404 
+    ... Number of PROTEIN atoms near REF =     12  
+    ... There are  16  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  16  in a total of  20
+    --> File : lig_397_c99.pdb  Is a NON-REACTIVE reactive trajectory with  80.0  % OUT
+       --> Files To Delete : lig_397*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (43.297 ),sd( 26.892 ) y_max( 85.699 )
+                     
+... Pocessing File  : lig_390_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 99.2563 
+    ... D_min ( C99_last --> Protein )    = 2.7221 
+    ... Number of PROTEIN atoms near REF =     27  
+    ... There are  0  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  10  in a total of  20
+    --> File : lig_390_c99.pdb  Is a NON-REACTIVE reactive trajectory with  50.0  % OUT
+       --> Files To Delete : lig_390*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (6.405 ),sd( 5.952 ) y_max( 20.392 )
+                     
+... Pocessing File  : lig_391_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 110.5569 
+    ... D_min ( C99_last --> Protein )    = 18.3237 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_391_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_391*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (60.699 ),sd( 21.612 ) y_max( 98.758 )
+                     
+... Pocessing File  : lig_411_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 121.7198 
+    ... D_min ( C99_last --> Protein )    = 30.8288 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_411_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_411*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (42.533 ),sd( 30.045 ) y_max( 106.738 )
+                     
+... Pocessing File  : lig_408_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 92.8012 
+    ... D_min ( C99_last --> Protein )    = 2.3778 
+    ... Number of PROTEIN atoms near REF =     10  
+    ... There are  14  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  18  in a total of  20
+    --> File : lig_408_c99.pdb  Is a NON-REACTIVE reactive trajectory with  90.0  % OUT
+       --> Files To Delete : lig_408*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (45.056 ),sd( 27.017 ) y_max( 92.801 )
+                     
+... Pocessing File  : lig_410_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 108.9124 
+    ... D_min ( C99_last --> Protein )    = 15.0102 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_410_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_410*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (41.749 ),sd( 20.109 ) y_max( 79.905 )
+                     
+... Pocessing File  : lig_403_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 119.0335 
+    ... D_min ( C99_last --> Protein )    = 24.4704 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_403_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_403*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (49.718 ),sd( 25.471 ) y_max( 83.358 )
+                     
+... Pocessing File  : lig_398_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 90.6219 
+    ... D_min ( C99_last --> Protein )    = 1.8513 
+    ... Number of PROTEIN atoms near REF =     23  
+    ... There are  0  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  0  in a total of  20
+    --> File : lig_398_c99.pdb  Is a REACTIVE trajectory withing  5.0  A 
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (1.332 ),sd( 0.572 ) y_max( 2.838 )
+                     
+... Pocessing File  : lig_413_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 100.9223 
+    ... D_min ( C99_last --> Protein )    = 3.4041 
+    ... Number of PROTEIN atoms near REF =      6  
+    ... There are  17  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  19  in a total of  20
+    --> File : lig_413_c99.pdb  Is a NON-REACTIVE reactive trajectory with  95.0  % OUT
+       --> Files To Delete : lig_413*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (40.449 ),sd( 21.775 ) y_max( 77.427 )
+                     
+... Pocessing File  : lig_396_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 118.2833 
+    ... D_min ( C99_last --> Protein )    = 19.2529 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_396_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_396*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (64.381 ),sd( 26.372 ) y_max( 100.406 )
+                     
+... Pocessing File  : lig_404_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 120.0185 
+    ... D_min ( C99_last --> Protein )    = 28.8377 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_404_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_404*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (78.929 ),sd( 25.601 ) y_max( 114.056 )
+                     
+... Pocessing File  : lig_394_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 123.3318 
+    ... D_min ( C99_last --> Protein )    = 21.0251 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_394_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_394*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (48.663 ),sd( 30.636 ) y_max( 112.310 )
+                     
+... Pocessing File  : lig_392_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 97.2533 
+    ... D_min ( C99_last --> Protein )    = 3.5414 
+    ... Number of PROTEIN atoms near REF =     11  
+    ... There are  14  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  17  in a total of  20
+    --> File : lig_392_c99.pdb  Is a NON-REACTIVE reactive trajectory with  85.0  % OUT
+       --> Files To Delete : lig_392*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (40.187 ),sd( 24.355 ) y_max( 75.795 )
+                     
+... Pocessing File  : lig_388_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 40.4506 
+    ... D_min ( C99_last --> Protein )    = 2.5450 
+    ... Number of PROTEIN atoms near REF =     20  
+    ... There are  0  Farther than  5.0  in a total of  20
+    ... Non_Reactive snaps  0  in a total of  20
+    --> File : lig_388_c99.pdb  Is a REACTIVE trajectory withing  5.0  A 
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (1.782 ),sd( 1.007 ) y_max( 3.497 )
+                     
+... Pocessing File  : lig_402_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 110.5774 
+    ... D_min ( C99_last --> Protein )    = 16.5507 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_402_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_402*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (43.885 ),sd( 29.521 ) y_max( 108.920 )
+                     
+... Pocessing File  : lig_407_c99.pdb
+    ... There are =  200  Atoms(Structures) 
+    ... D_max ( C99_last --> C99_dyn  )    = 121.6264 
+    ... D_min ( C99_last --> Protein )    = 26.5295 
+    ... Number of PROTEIN atoms near REF =      0  
+    --> File : lig_407_c99.pdb  Is a NON reactive trajectory withing  5.0  A 
+       --> Files To Delete : lig_407*
+    ... Analysing  20  ns with  20  snaps in a total of  200
+        ... y_ave (63.780 ),sd( 32.493 ) y_max( 113.363 )
+...
+... There are =  3  REACTIVE trajectories 
+...
