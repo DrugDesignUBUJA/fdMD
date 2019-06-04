@@ -1,0 +1,14 @@
+ ./fdMD_ReactiveTraj.py                                        \
+                             -pocket         False             \
+                             -xray           False             \
+                             -fil_prot       first_lig.pdb     \
+                             -dis_min         5        \
+                             -prefix_filpdb  _c99      \
+                             -name_atom      C99       \
+                             -num_plots       2        \
+                             -dis_plots       5,25     \
+                             -snaps_byone     1        \
+                             -num_ns_anal     20       \
+                             -percent_anal    10       \
+                             > Info_fdMD_ReactiveTraj
+
