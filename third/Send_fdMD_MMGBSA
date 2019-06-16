@@ -1,0 +1,35 @@
+#!/bin/bash
+##########################################
+# Opcions i parametres de l'SGE
+##########################################
+# (1) Nom del treball (per identificar)
+#$ -N JOneLig
+# (2) Recursos sol.licitats
+##$ -l h_rt
+##$ -l mem_free
+#$ -pe smp 1
+# (2) Fitxers de sortida
+#$ -cwd
+#$ -o Bmmpbsa.out
+#$ -e Bmmpbsa.err
+# (4) Envia un mail quan acava el treball.
+##$ -m e
+##$ -M  nom@gmail.com        
+##########################################
+# Entorn d.usuari
+##########################################
+# Es carreguen els moduls a utilitzar
+module load numpy/1.6.1
+module load python/2.7.10
+module load ambertools/16_ompi
+##########################################
+echo " SGE_O_WORKDIR : $SGE_O_WORKDIR"
+echo "nslots  : $NSLOTS "
+echo "TMP DIR   : $TMPDIR"
+##########################################
+# calcul
+##########################################
+source "$AMBERHOME/amber.csh"
+
+./fdMD_MMGBSA_Send.cmd
+
