@@ -1,0 +1,8 @@
+   /aplic/amber/amber16_ompi/bin/ante-MMPBSA.py     \
+   -p ../2ohk_onelig_norep.top                      \
+   -c ./complex_com.top                \
+   -r ./complex_rec.top                \
+   -l ./complex_lig.top                \
+   -m  ':1-387'      \
+   -s  :WAT,Na+,Cl- \
+   --radii=mbondi2    >> ante-MMPBSA.log    

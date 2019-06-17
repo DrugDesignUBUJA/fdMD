@@ -1,0 +1,9 @@
+Stripping :WAT,Na+,Cl- (solvent) from original topology, output is ./complex_com.top
+Done stripping solvent!
+
+Creating receptor topology file by stripping !(:1-387) from ./complex_com.top
+Done creating receptor topology file!
+
+Creating ligand topology file by stripping :1-387 from ./complex_com.top
+Done creating ligand topology file!
+
