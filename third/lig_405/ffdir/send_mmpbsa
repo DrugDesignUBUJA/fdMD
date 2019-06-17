@@ -1,0 +1,58 @@
+#!/bin/bash                              
+########################################## 
+# Opcions i parametres de l'SGE            
+########################################## 
+# (1) Name of the Work ( Indentification ) 
+#$ -N lig_405                                
+# (2) Computational Resources (not needed) 
+##$ -l h_rt                                
+##$ -l mem_free                            
+#$ -pe smp 8                       
+##$ -l exclusive=true                      
+# (2) Output information                   
+#$ -cwd                                    
+#$ -o lig_405.out          		   
+#$ -e lig_405.err 		           
+# (4) Send e-mail at the end of the work   
+##$ -m e                                   
+##$ -M  Name_User@ub.edu                   
+########################################## 
+# Software resources                       
+########################################## 
+# Modules                                  
+module load numpy/1.6.1                    
+module load python/2.7.10                  
+module load ambertools/16_ompi             
+########################################## 
+echo " SGE_O_WORKDIR : $SGE_O_WORKDIR"     
+echo "nslots  : $NSLOTS "                  
+echo "TMP DIR   : $TMPDIR"                 
+########################################## 
+# calcul                                   
+########################################## 
+set RUN=/home/g6jaime/jaime/run            
+echo "RUN DIR   : $RUN "                   
+echo " AMBERHOME   : $AMBERHOME "          
+source "$AMBERHOME/amber.csh"              
+#                                          
+cd ../fftop                                
+set TOP_DIR=`pwd`                          
+cd $SGE_O_WORKDIR                          
+cd ../../                                  
+set DIN_DIR=`pwd`                          
+cd $SGE_O_WORKDIR                          
+cp $SGE_O_WORKDIR/mmpbsa_py.inp $TMPDIR    
+cd $TMPDIR                                 
+ mpirun  -np 8  MMPBSA.py.MPI -O   \
+              -i  ./mmpbsa_py.inp \
+              -o  ./mmpbsa_py.out \
+              -eo ./DeltaG_BySnaps.csv \
+              -sp  $DIN_DIR/2ohk_onelig_norep.top     \
+              -cp  $TOP_DIR/complex_com.top   \
+              -rp  $TOP_DIR/complex_rec.top   \
+              -lp  $TOP_DIR/complex_lig.top   \
+              -y   $DIN_DIR/lig_405.nc      \
+              >>  ./progres.log               
+#
+rm _M* refer*        
+cp * $SGE_O_WORKDIR  

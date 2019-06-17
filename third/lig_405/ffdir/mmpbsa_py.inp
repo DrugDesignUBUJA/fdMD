@@ -1,0 +1,9 @@
+&general                                                  
+ startframe=1, endframe=200, interval=1      
+ keep_files=0,                                            
+/                                                         
+&gb                                                
+ igb=2,                                            
+ surften = 0.0072,                                 
+ saltcon=0.0                                       
+/                                                  
