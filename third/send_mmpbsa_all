@@ -1,0 +1,9 @@
+cd /home/g6jaime/GitHub/traj_300_JRM  
+cd  lig_388/ffdir    
+qsub -q iqtc02.q send_mmpbsa 
+cd /home/g6jaime/GitHub/traj_300_JRM  
+cd  lig_398/ffdir    
+qsub -q iqtc02.q send_mmpbsa 
+cd /home/g6jaime/GitHub/traj_300_JRM  
+cd  lig_405/ffdir    
+qsub -q iqtc02.q send_mmpbsa 
